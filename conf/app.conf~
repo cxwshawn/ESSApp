@@ -1,0 +1,7 @@
+appname = hello
+httpport = 8080
+runmode = dev
+EnableErrorsShow = true
+AccessLogs = true
+viewspath = "public"
+StaticDir = font-awesome/css:public/font-awesome/css js:public/js css:public/css img:public/img post/first:public/post/first about:public/about static:static
