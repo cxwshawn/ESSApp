@@ -2,7 +2,7 @@ package controllers
 
 import (
 	"github.com/astaxie/beego"
-    // "fmt"
+    "fmt"
     // "os"
     )
 
@@ -13,7 +13,7 @@ type MainController struct {
 func (c *MainController) Get() {
     // l := logs.GetLogger()
     filename := c.Ctx.Input.Param(":urlname")
-    // fmt.Println(c.Ctx.Input.Param(":urlname"))
+    fmt.Println(filename)
 	c.Data["Website"] = "beego.me"
 	c.Data["Email"] = "cxwshawn@gmail.com"
     // if _, err := os.Stat(beego.BConfig.WebConfig.ViewsPath + "/" + filename); err == nil {
